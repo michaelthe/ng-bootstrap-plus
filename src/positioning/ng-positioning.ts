@@ -130,6 +130,9 @@ export class Positioning {
         break;
     }
 
+    targetElPosition.left = Math.min(window.innerWidth - targetElPosition.width - 20, Math.max(10, targetElPosition.left));
+    targetElPosition.top = Math.min(window.innerHeight - targetElPosition.height - 20, Math.max(10, targetElPosition.top));
+
     targetElPosition.top = Math.round(targetElPosition.top);
     targetElPosition.bottom = Math.round(targetElPosition.bottom);
     targetElPosition.left = Math.round(targetElPosition.left);

@@ -1,14 +1,14 @@
 {
-  "name": "ngx-bootstrap-base",
-  "version": "1.8.1",
+  "name": "ng-bootstrap-plus",
+  "version": "2.0.0",
   "description": "Native Angular Bootstrap Components",
   "private": true,
   "scripts": {
     "lite-server": "lite-server -c demo/bs-config.js",
     "typedoc": "typedoc --exclude '**/*.spec.ts' ./src/",
     "demo.docs": "node scripts/docs/get-doc.js",
-    "demo.serve": "run-s build link demo.docs demo.build lite-server",
-    "demo.gh-pages": "run-s build demo.docs demo.build demo.deploy",
+    "demo.serve": "run-s build link demo.build lite-server",
+    "demo.gh-pages": "run-s build demo.build demo.deploy",
     "demo.build": "ng build -prod --aot && npm run generate-bs4",
     "demo.deploy": "gh-pages -d demo/dist",
     "demo-beta-deploy": "gh-pages -d demo/dist -r git@github.com:valorkin/ngx-bootstrap.git -b gh-pages",
@@ -45,18 +45,14 @@
     "angular2",
     "twitter-bootstrap"
   ],
-  "author": "Dmitriy Shekhovtsov <valorkin@gmail.com>",
+  "author": "michael theodorides <mc.theodorides@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ngx-bootstrap.git"
+    "url": "git@github.com:michaelthe/ng-bootstrap-plus.git"
   },
-  "bugs": {
-    "url": "https://github.com/valor-software/ngx-bootstrap/issues"
-  },
-  "homepage": "https://github.com/valor-software/ngx-bootstrap#readme",
   "dependencies": {
-    "moment": "2.18.1"
+    "moment": "^2.18.1"
   },
   "peerDependencies": {
     "@angular/common": "^2.3.1 || >=4.0.0",
